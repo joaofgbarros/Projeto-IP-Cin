@@ -216,6 +216,7 @@ int main(void) {
                     // Store the index of the selected map
                     selectedMapIndex = currentTextureIndex;
                     estadoTela = Gameplay; // Change state to Gameplay when the left mouse button is pressed
+                    tocaAudio(2);
                 }
 
             }break;
@@ -965,21 +966,21 @@ int main(void) {
 
                 //Descrevendo os controles basicos
                 DrawText("Player 1 Controls:",100,100,30,WHITE);
-                DrawText("D -> move to the right | A -> move to the left",100,150,30,WHITE);
-                DrawText("W -> to jump",100,200,30,WHITE);
-                DrawText("C -> hand-to-hand attack | X -> shoot projectile ",100,250,30,WHITE);
+                DrawText("D -> move right | A -> move left",100,150,30,WHITE);
+                DrawText("W -> jump",100,200,30,WHITE);
+                DrawText("C -> Close attack | X -> Shoot projectile ",100,250,30,WHITE);
 
                 DrawText("Player 2 Controls:",100,350,30,GRAY);
-                DrawText("Right arrow -> move to the right | Left arrow -> move to the left",100,400,30,GRAY);
-                DrawText("Up arrow -> to jump",100,450,30,GRAY);
-                DrawText("M -> hand-to-hand attack | N -> shoot projectile ",100,500,30,GRAY);
+                DrawText("Right arrow -> move right | Left arrow -> move left",100,400,30,GRAY);
+                DrawText("Up arrow -> jump",100,450,30,GRAY);
+                DrawText("M -> Close attack | N -> Shoot projectile ",100,500,30,GRAY);
 
             }break;
             case Final:
             {
                 ClearBackground(BLACK);
                 DrawTexture(texture10,300,0, WHITE);
-                DrawText("Digite Enter To Back Menu",250,500,50,WHITE);
+                DrawText("Press Enter to go to Menu",250,500,50,WHITE);
                 if (IsKeyPressed(KEY_ENTER)) 
                     estadoTela = Titulo;
 
