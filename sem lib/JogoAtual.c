@@ -60,25 +60,25 @@ Sound fxSelecao;
 void initAudios() {
     //Carregamento dos audios
     SetMasterVolume(1.0f);
-    musicaMenu = LoadSound("musicaMenu.wav");
+    musicaMenu = LoadSound("assets/musicaMenu.wav");
 
-    musicaLuta = LoadSound("musicaLuta.wav");
+    musicaLuta = LoadSound("assets/musicaLuta.wav");
 
-    musicaFinal = LoadSound("musicaFinal.wav");
+    musicaFinal = LoadSound("assets/musicaFinal.wav");
 
-    fxSoco = LoadSound("soco.wav");
+    fxSoco = LoadSound("assets/soco.wav");
 
-    fxChute = LoadSound("chute.wav");
+    fxChute = LoadSound("assets/chute.wav");
 
-    fxHadouken = LoadSound("hadouken.wav");
+    fxHadouken = LoadSound("assets/hadouken.wav");
 
-    fxVidaExtra = LoadSound("vidaExtra.wav");
+    fxVidaExtra = LoadSound("assets/vidaExtra.wav");
 
-    fxPulo = LoadSound("pulo.wav");
+    fxPulo = LoadSound("assets/pulo.wav");
 
-    fxCombate = LoadSound("combate.wav");
+    fxCombate = LoadSound("assets/combate.wav");
 
-    fxSelecao = LoadSound("selecao.wav");
+    fxSelecao = LoadSound("assets/selecao.wav");
 }
 
 //Função que toca as músicas
@@ -237,9 +237,9 @@ int main(void) {
     int cooldownProjectileEnemy = 0;
 
     Texture2D vetor[3];
-    vetor[0] = LoadTexture("Mapa1.png");
-    vetor[1] = LoadTexture("mapa2.png");
-    vetor[2] = LoadTexture("mapa3.png");
+    vetor[0] = LoadTexture("assets/Mapa1.png");
+    vetor[1] = LoadTexture("assets/mapa2.png");
+    vetor[2] = LoadTexture("assets/mapa3.png");
 
     int currentTextureIndex = 0;
     int selectedMapIndex = 0; // Store the index of the selected map
@@ -270,28 +270,28 @@ int main(void) {
     Vector2 textPosition3 = {400,610};
 
     // Instalação da fonte
-    Font font = LoadFont("leadcoat.ttf");
+    Font font = LoadFont("assets/leadcoat.ttf");
     if (font.texture.id == 0) {
         TraceLog(LOG_WARNING, "Font could not be loaded! Exiting...");
         CloseWindow();
         return -1;
     }
 
-    Texture2D texture = LoadTexture("OIG_resized.png");
-    Texture2D texture2 = LoadTexture("Espadas_Duplas2.png");
-    Texture2D texture3 = LoadTexture("Mapa1.png");
-    Texture2D texture4 = LoadTexture("escudo.png");
-    Texture2D texture5 = LoadTexture("hero3.png");
-    Texture2D texture6 = LoadTexture("hero1.png");
-    Texture2D texture7 = LoadTexture("ballblue.png");
-    Texture2D texture8 = LoadTexture("ballred.png");
-    Texture2D texture9 = LoadTexture("fundoEscolha.png");
-    Texture2D texture10 = LoadTexture("gameOver.png");
-    Texture2D texture11 = LoadTexture("escolhaMapa.png");
-    Texture2D texture12 = LoadTexture("mapa2.png");
-    Texture2D texture13 = LoadTexture("mapa3.png");
+    Texture2D texture = LoadTexture("assets/OIG_resized.png");
+    Texture2D texture2 = LoadTexture("assets/Espadas_Duplas2.png");
+    Texture2D texture3 = LoadTexture("assets/Mapa1.png");
+    Texture2D texture4 = LoadTexture("assets/escudo.png");
+    Texture2D texture5 = LoadTexture("assets/hero3.png");
+    Texture2D texture6 = LoadTexture("assets/hero1.png");
+    Texture2D texture7 = LoadTexture("assets/ballblue.png");
+    Texture2D texture8 = LoadTexture("assets/ballred.png");
+    Texture2D texture9 = LoadTexture("assets/fundoEscolha.png");
+    Texture2D texture10 = LoadTexture("assets/gameOver.png");
+    Texture2D texture11 = LoadTexture("assets/escolhaMapa.png");
+    Texture2D texture12 = LoadTexture("assets/mapa2.png");
+    Texture2D texture13 = LoadTexture("assets/mapa3.png");
     Texture2D texture14;
-    Texture2D texture15 = LoadTexture("hero2.png");
+    Texture2D texture15 = LoadTexture("assets/hero2.png");
     
     // Estado inicial da tela
     EstadosDeTela estadoTela = Carregamento;

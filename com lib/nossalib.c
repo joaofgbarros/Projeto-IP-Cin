@@ -16,25 +16,25 @@ Sound fxSelecao;
 void initAudios() {
     //Carregamento dos audios
     SetMasterVolume(1.0f);
-    musicaMenu = LoadSound("musicaMenu.wav");
+    musicaMenu = LoadSound("assets/musicaMenu.wav");
 
-    musicaLuta = LoadSound("musicaLuta.wav");
+    musicaLuta = LoadSound("assets/musicaLuta.wav");
 
-    musicaFinal = LoadSound("musicaFinal.wav");
+    musicaFinal = LoadSound("assets/musicaFinal.wav");
 
-    fxSoco = LoadSound("soco.wav");
+    fxSoco = LoadSound("assets/soco.wav");
 
-    fxChute = LoadSound("chute.wav");
+    fxChute = LoadSound("assets/chute.wav");
 
-    fxHadouken = LoadSound("hadouken.wav");
+    fxHadouken = LoadSound("assets/hadouken.wav");
 
-    fxVidaExtra = LoadSound("vidaExtra.wav");
+    fxVidaExtra = LoadSound("assets/vidaExtra.wav");
 
-    fxPulo = LoadSound("pulo.wav");
+    fxPulo = LoadSound("assets/pulo.wav");
 
-    fxCombate = LoadSound("combate.wav");
+    fxCombate = LoadSound("assets/combate.wav");
 
-    fxSelecao = LoadSound("selecao.wav");
+    fxSelecao = LoadSound("assets/selecao.wav");
 }
 
 //Função que toca as músicas
